@@ -1,2 +1,2 @@
 # SWE447
-SP18-SWE447 GUI and Graphics
+FA18-SWE447 GUI and Graphics
