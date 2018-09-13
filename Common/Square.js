@@ -17,7 +17,7 @@ function Square(gl, vertexShaderId, fragmentShaderId) {
 
 	this.positions = {
 	    // Add here
-		values = new Float32Array([
+		values : new Float32Array([
 			0.0,0.0,
 			1.0,0.0,
 			1.0,1.0,
@@ -26,7 +26,7 @@ function Square(gl, vertexShaderId, fragmentShaderId) {
 		numComponents : 2
 	};
 	this.colors = {
-		values = new Float32Array([
+		values : new Float32Array([
 			0.0,1.0,0.0,
 			])
 		numComponents : 3
