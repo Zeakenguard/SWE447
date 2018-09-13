@@ -1,7 +1,7 @@
 function Square(gl, vertexShaderId, fragmentShaderId) {
 	var vertShdr = vertexShaderId || "Square-vertex-shader";
 	var fragShdr = fragmentShaderId || "Square-fragment-shader";
-
+	
 	this.program = initShaders(gl, vertShdr, fragShdr);
 
 	if ( this.program < 0 ) {
@@ -21,21 +21,23 @@ function Square(gl, vertexShaderId, fragmentShaderId) {
 			0.0,0.0,
 			1.0,0.0,
 			1.0,1.0,
-			0.0,1.0,
-			])
+			0.0,1.0
+			]),
 		numComponents : 2
 	};
 	this.colors = {
 		values : new Float32Array([
-			0.0,1.0,0.0,
-			])
+			1.0,1.0,0.0,
+			1.0,1.0,0.0,
+			1.0,1.0,0.0,
+			1.0,1.0,0.0
+			]),
 		numComponents : 3
 	};
     this.indices = {
         // Add here
-	    values = new Unit16Array([0, 1, 2, 3])
+	    values : new Uint16Array([0, 1, 3 , 2])
     };
-	
 	// positions
 	
 	this.positions.buffer = gl.createBuffer();
