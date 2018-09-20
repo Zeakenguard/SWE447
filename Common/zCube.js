@@ -53,6 +53,12 @@ function Cube( vertexShaderId, fragmentShaderId ) {
         numComponents : 3
     };
     
+	this.colors = {
+		values : new Float32Array([
+		
+		])
+	};
+	
     this.indices = { 
         values : new Uint16Array([
             // Add your list of triangle indices here
