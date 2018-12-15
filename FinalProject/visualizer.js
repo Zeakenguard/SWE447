@@ -44,7 +44,7 @@ camera.add(listener);
 
 var song = new THREE.Audio(listener);
 var audioLoader = new THREE.AudioLoader();
-audioLoader.load('Bee Gees - Night Fever (Serban Mix).mp3', function (buffer) {
+audioLoader.load('JMoua_Project.mp3', function (buffer) {
     song.setBuffer(buffer);
     song.setLoop(true);
     song.setVolume(0.5);
